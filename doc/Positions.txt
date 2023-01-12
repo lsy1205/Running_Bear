@@ -1,0 +1,31 @@
+SDL_Point MapPos		--> 地圖大格
+SDL_Point PixelPos		--> 地圖小格
+SDL_Rect rectOnTexture	--> 圖片上
+SDL_Rect rectOnScreen	--> 螢幕上
+
+Map:
+vector<SDL_Point> getHuntersMapPos();
+SDL_Point getRunnerMapPos();
+
+Hunter:
+SDL_Point getMapPos();
+SDL_Point getPixelPos();		--> character center
+void setMapPos(SDL_Point &);
+void setPixelPos(SDL_Point &);	--> character center
+
+Runner:
+SDL_Point getMapPos();
+SDL_Point getPixelPos();		--> character center
+void setMapPos(SDL_Point &);
+void setPixelPos(SDL_Point &);	--> character center
+
+BasicObject:
+SDL_Texture *texture;
+SDL_Rect rectOnScreen;
+SDL_Rect rectOnTexture;
+SDL_Texture *getTexture();
+SDL_Rect *getRectOnScreen();
+SDL_Rect *getRectOnTexture();
+void setTexture(SDL_Texture *);
+void setRectOnScreen(SDL_Rect &);
+void setRectOnTexture(SDL_Rect &);

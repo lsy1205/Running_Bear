@@ -1,0 +1,59 @@
+{
+	"type" : GAMESTATE_CHANGE,
+	"events" : [
+		{
+			"name" : "GameStart"
+			"code" : START,
+			"data1" : NULL,
+			"data2" : NULL,
+			"trigger" : Button,
+		},
+		{
+			"name" : "GamePause"
+			"code" : PAUSE,
+			"data1" : NULL,
+			"data2" : NULL,
+			"trigger" : Button|createMission(),
+		},
+		{
+			"name" : "GameResume"
+			"code" : RESUME,
+			"data1" : NULL,
+			"data2" : NULL,
+			"trigger" : Button,
+		},
+		{
+			"name" : "GameEnd"
+			"code" : END,
+			"data1" : &(true)|&(false),
+			"data2" : NULL,
+			"trigger" : Map,
+		},
+		{
+			"name" : "GameRestart"
+			"code" : STARTMENU,
+			"data1" : NULL,
+			"data2" : NULL,
+			"trigger" : Button,
+		},
+	]	
+},
+{
+	"type" : ITEM_USED,
+	"events" : [
+		{
+			"name" : "ItemUsed"
+			"code" : (ItemList)the item being used,
+			"data1" : (SDL_Point *)where the event happened(in mapPos),
+			"data2" : (CHARACTER *)the character doing this,
+			"trigger" : CHARACTER,
+		},
+	]
+},
+{
+	"type" : ,
+	"code" : ,
+	"data1" : NULL,
+	"data2" : NULL,
+	"trigger" : ,
+}

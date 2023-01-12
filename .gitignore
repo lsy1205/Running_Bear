@@ -1,0 +1,50 @@
+## User
+bin/
+include/
+lib/
+cmake-build-debug
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+.idea
+src/*
+!src/*.cpp
+!src/*.h
+!src/*.c
+src/SDL_bgi.cpp
+src/SDL_bgi.h
+SDL2_Devcpp/
+
+## C++
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app

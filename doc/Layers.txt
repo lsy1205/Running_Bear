@@ -1,0 +1,5 @@
+characterLayer
+pauseLayer
+boardLayer(Images)
+loadingLayer
+statusLayer
