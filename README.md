@@ -1,4 +1,5 @@
 # RunningBareBear (This is a cloned version)
+## Demo Video: https://youtu.be/QYwabiK9wvQ
 獲勝條件：在倒數時間歸零之前不被獵人抓到
         移動會造成小幅體力的下降
         衝刺會造成大幅體力的下降
